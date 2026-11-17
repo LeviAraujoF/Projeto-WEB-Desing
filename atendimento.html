@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portal - Suporte e Atendimento</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100 flex flex-col md:flex-row min-h-screen font-sans">
+    <div class="w-full md:w-64 bg-slate-800 text-white p-4">
+      <h1 class="text-xl font-bold mb-6 border-b border-slate-600 pb-2">
+        Portal de Atendimento
+      </h1>
+
+      <nav>
+        <ul class="space-y-2">
+          <li>
+            <a href="index.html" class="block p-2 hover:bg-slate-700 rounded"
+              >Painel Principal</a
+            >
+          </li>
+          <li>
+            <a href="usuarios.html" class="block p-2 hover:bg-slate-700 rounded"
+              >Usuários</a
+            >
+          </li>
+          <li>
+            <a href="produtos.html" class="block p-2 hover:bg-slate-700 rounded"
+              >Produtos</a
+            >
+          </li>
+          <li>
+            <a href="vendas.html" class="block p-2 hover:bg-slate-700 rounded"
+              >Relatórios</a
+            >
+          </li>
+          <li>
+            <a href="geral.html" class="block p-2 hover:bg-slate-700 rounded"
+              >Configurações</a
+            >
+          </li>
+          <li>
+            <a href="atendimento.html" class="block p-2 bg-blue-600 rounded"
+              >Suporte</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="flex-1 p-4 md:p-8">
+      <div
+        class="flex justify-between items-center bg-white p-4 rounded shadow mb-6"
+      >
+        <h2 class="text-lg font-semibold">Suporte e Atendimento</h2>
+        <a href="index.html" class="text-red-500 hover:underline">Sair</a>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <div class="bg-white p-6 rounded shadow">
+          <h3 class="text-lg font-medium mb-4">Abrir Novo Chamado</h3>
+          <form action="atendimento.html">
+            <div class="mb-4">
+              <label class="block text-gray-700 mb-2">Assunto</label>
+              <select
+                class="w-full border border-gray-300 p-2 rounded focus:outline-none focus:border-blue-500"
+              >
+                <option>Problema Técnico</option>
+                <option>Dúvida sobre Faturamento</option>
+                <option>Sugestão de Melhoria</option>
+                <option>Outros</option>
+              </select>
+            </div>
+
+            <div class="mb-4">
+              <label class="block text-gray-700 mb-2">Mensagem</label>
+              <textarea
+                class="w-full border border-gray-300 p-2 rounded focus:outline-none focus:border-blue-500 h-32"
+                placeholder="Descreva o seu problema..."
+                required
+              ></textarea>
+            </div>
+
+            <button
+              type="submit"
+              class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-500 w-full"
+            >
+              Enviar Chamado
+            </button>
+          </form>
+        </div>
+
+        <div class="bg-white p-6 rounded shadow">
+          <h3 class="text-lg font-medium mb-4">Meus Chamados Recentes</h3>
+          <div class="overflow-x-auto">
+            <table class="w-full text-left border-collapse">
+              <thead>
+                <tr class="bg-gray-200 text-gray-700">
+                  <th class="p-3 border-b">ID</th>
+                  <th class="p-3 border-b">Assunto</th>
+                  <th class="p-3 border-b">Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="hover:bg-gray-50 border-b">
+                  <td class="p-3">#908</td>
+                  <td class="p-3">Erro ao cadastrar produto</td>
+                  <td class="p-3">
+                    <span
+                      class="bg-yellow-100 text-yellow-800 text-xs px-2 py-1 rounded"
+                      >Em Análise</span
+                    >
+                  </td>
+                </tr>
+                <tr class="hover:bg-gray-50 border-b">
+                  <td class="p-3">#875</td>
+                  <td class="p-3">Dúvida no relatório de vendas</td>
+                  <td class="p-3">
+                    <span
+                      class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded"
+                      >Resolvido</span
+                    >
+                  </td>
+                </tr>
+                <tr class="hover:bg-gray-50 border-b">
+                  <td class="p-3">#812</td>
+                  <td class="p-3">Alteração de senha</td>
+                  <td class="p-3">
+                    <span
+                      class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded"
+                      >Resolvido</span
+                    >
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

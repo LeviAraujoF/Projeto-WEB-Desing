@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal - Usuários</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex flex-col md:flex-row min-h-screen font-sans">
+
+    <div class="w-full md:w-64 bg-slate-800 text-white p-4">
+        <h1 class="text-xl font-bold mb-6 border-b border-slate-600 pb-2">Portal de Atendimento</h1>
+        <nav>
+            <ul class="space-y-2">
+                <li><a href="index.html" class="block p-2 hover:bg-slate-700 rounded">Painel Principal</a></li>
+                <li><a href="usuarios.html" class="block p-2 bg-blue-600 rounded">Usuários</a></li>
+                <li><a href="produtos.html" class="block p-2 hover:bg-slate-700 rounded">Produtos</a></li>
+                <li><a href="vendas.html" class="block p-2 hover:bg-slate-700 rounded">Relatórios</a></li>
+                <li><a href="geral.html" class="block p-2 hover:bg-slate-700 rounded">Configurações</a></li>
+                <li><a href="atendimento.html" class="block p-2 hover:bg-slate-700 rounded">Suporte</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="flex-1 p-4 md:p-8">
+        
+        <div class="flex justify-between items-center bg-white p-4 rounded shadow mb-6">
+            <h2 class="text-lg font-semibold">Gerenciar Usuários</h2>
+            <a href="index.html" class="text-red-500 hover:underline">Sair</a>
+        </div>
+
+        <div class="bg-white p-6 rounded shadow">
+            
+            <div class="flex justify-between items-center mb-4 flex-wrap">
+                <h3 class="text-lg font-medium">Lista de Usuários Cadastrados</h3>
+                <a href="cadastrousuario.html" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-500 mt-2 sm:mt-0">
+                    + Adicionar Usuário
+                </a>
+            </div>
+
+            <div class="overflow-x-auto">
+                <table class="w-full text-left border-collapse table-auto">
+                    <thead>
+                        <tr class="bg-gray-200 text-gray-700">
+                            <th class="p-3 border-b">Nome</th>
+                            <th class="p-3 border-b">E-mail</th>
+                            <th class="p-3 border-b">Perfil</th>
+                            <th class="p-3 border-b">Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="hover:bg-gray-50 border-b">
+                            <td class="p-3">João Silva</td>
+                            <td class="p-3">joao.silva@email.com</td>
+                            <td class="p-3"><span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded">Ativo</span></td>
+                            <td class="p-3">
+                                <a href="#" class="text-blue-500 hover:underline mr-2">Editar</a>
+                                <a href="#" class="text-red-500 hover:underline">Excluir</a>
+                            </td>
+                        </tr>
+                        <tr class="hover:bg-gray-50 border-b">
+                            <td class="p-3">Maria Oliveira</td>
+                            <td class="p-3">maria.o@email.com</td>
+                            <td class="p-3"><span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded">Ativo</span></td>
+                            <td class="p-3">
+                                <a href="#" class="text-blue-500 hover:underline mr-2">Editar</a>
+                                <a href="#" class="text-red-500 hover:underline">Excluir</a>
+                            </td>
+                        </tr>
+                        <tr class="hover:bg-gray-50 border-b">
+                            <td class="p-3">Carlos Souza</td>
+                            <td class="p-3">carlos.s@email.com</td>
+                            <td class="p-3"><span class="bg-red-100 text-red-800 text-xs px-2 py-1 rounded">Inativo</span></td>
+                            <td class="p-3">
+                                <a href="#" class="text-blue-500 hover:underline mr-2">Editar</a>
+                                <a href="#" class="text-red-500 hover:underline">Excluir</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+</html>

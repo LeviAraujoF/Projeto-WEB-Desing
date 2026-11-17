@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal - Financeiro</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex flex-col md:flex-row min-h-screen font-sans">
+
+    <div class="w-full md:w-64 bg-slate-800 text-white p-4">
+        <h1 class="text-xl font-bold mb-6 border-b border-slate-600 pb-2">Portal de Atendimento</h1>
+        
+        <nav>
+            <ul class="space-y-2">
+                <li><a href="index.html" class="block p-2 hover:bg-slate-700 rounded">Painel Principal</a></li>
+                <li><a href="usuarios.html" class="block p-2 hover:bg-slate-700 rounded">Usuários</a></li>
+                <li><a href="produtos.html" class="block p-2 hover:bg-slate-700 rounded">Produtos</a></li>
+                <li><a href="vendas.html" class="block p-2 bg-blue-600 rounded">Relatórios</a></li>
+                <li><a href="geral.html" class="block p-2 hover:bg-slate-700 rounded">Configurações</a></li>
+                <li><a href="atendimento.html" class="block p-2 hover:bg-slate-700 rounded">Suporte</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="flex-1 p-4 md:p-8">
+        
+        <div class="flex justify-between items-center bg-white p-4 rounded shadow mb-6">
+            <h2 class="text-lg font-semibold">Resumo Financeiro</h2>
+            <a href="index.html" class="text-red-500 hover:underline">Sair</a>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+            <div class="bg-white p-4 rounded shadow border-l-4 border-green-500">
+                <p class="text-gray-500 text-sm">Entradas (Receitas)</p>
+                <p class="text-xl font-bold text-green-600">R$ 45.300,00</p>
+            </div>
+            
+            <div class="bg-white p-4 rounded shadow border-l-4 border-red-500">
+                <p class="text-gray-500 text-sm">Saídas (Despesas)</p>
+                <p class="text-xl font-bold text-red-600">R$ 12.800,00</p>
+            </div>
+            
+            <div class="bg-white p-4 rounded shadow border-l-4 border-blue-500">
+                <p class="text-gray-500 text-sm">Saldo Líquido</p>
+                <p class="text-xl font-bold">R$ 32.500,00</p>
+            </div>
+        </div>
+
+        <div class="bg-white p-6 rounded shadow">
+            <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-4 gap-4">
+                <h3 class="text-lg font-medium">Demonstrativo de Fluxo de Caixa</h3>
+                <a href="vendas.html" class="bg-gray-600 text-white px-4 py-2 rounded hover:bg-gray-500">Voltar para Vendas</a>
+            </div>
+
+            <div class="overflow-x-auto mt-3">
+                <table class="w-full text-left border-collapse">
+                    <thead>
+                        <tr class="bg-gray-200 text-gray-700">
+                            <th class="p-3 border-b">Data</th>
+                            <th class="p-3 border-b">Descrição</th>
+                            <th class="p-3 border-b">Tipo</th>
+                            <th class="p-3 border-b">Valor</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="hover:bg-gray-50 border-b">
+                            <td class="p-3">29/10/2026</td>
+                            <td class="p-3">Pagamento Fatura #1024</td>
+                            <td class="p-3 text-green-600 font-medium">Entrada</td>
+                            <td class="p-3">R$ 1.200,00</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50 border-b">
+                            <td class="p-3">28/10/2026</td>
+                            <td class="p-3">Pagamento Fornecedor (Internet)</td>
+                            <td class="p-3 text-red-600 font-medium">Saída</td>
+                            <td class="p-3">- R$ 350,00</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50 border-b">
+                            <td class="p-3">27/10/2026</td>
+                            <td class="p-3">Manutenção Servidores</td>
+                            <td class="p-3 text-red-600 font-medium">Saída</td>
+                            <td class="p-3">- R$ 800,00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
